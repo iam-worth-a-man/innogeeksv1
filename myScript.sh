@@ -28,7 +28,7 @@ if !(grep -qw $email names.txt)
 then
 echo "Enter Password"
 read pass
-echo "$email $password" >> names.txt
+echo -en "\n$email $pass" >> names.txt
 echo "$email, You are Successfully Registered"
 else
 echo "Emain already exists, try logging in."
