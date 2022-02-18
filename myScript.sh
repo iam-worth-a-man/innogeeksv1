@@ -29,9 +29,10 @@ then
 echo "Enter Password"
 read pass
 echo "$email $password" >> names.txt
-echo "$email You are Successfully Registered"
+echo "$email, You are Successfully Registered"
 else
 echo "Emain already exists, try logging in."
 fi
+else
 echo "Enter Carefully"
 fi
