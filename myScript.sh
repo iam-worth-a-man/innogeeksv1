@@ -20,7 +20,8 @@ else
 echo "Welcome $email, You are logged in"
 fi
 fi
-else
+elif [ $val == 2 ]
+then
 echo "Enter Email"
 read email
 if !(grep -qw $email names.txt)
@@ -28,8 +29,9 @@ then
 echo "Enter Password"
 read pass
 echo "$email $password" >> names.txt
-echo "Successfully Registered"
+echo "$email You are Successfully Registered"
 else
 echo "Emain already exists, try logging in."
 fi
+echo "Enter Carefully"
 fi
